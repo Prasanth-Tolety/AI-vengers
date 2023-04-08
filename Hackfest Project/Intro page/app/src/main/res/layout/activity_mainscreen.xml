@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="Study Sphere"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:onClick="studentClick"
+        android:id="@+id/student"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:backgroundTint="@color/white"
+        android:text="Student"
+        android:textColor="@color/purple_500"
+        android:shadowColor="@color/white"
+        app:cornerRadius="10dp"
+        app:elevation="10dp"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:onClick="profClick"
+        android:id="@+id/professor"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/student"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="10dp"
+        android:text="Professor"
+        android:textColor="@color/purple_500"
+        android:textSize="30dp"
+        app:elevation="10dp" />
+</RelativeLayout>

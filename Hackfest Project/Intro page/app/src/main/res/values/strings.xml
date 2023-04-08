@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Onboarding</string>
+
+    //Headings
+    <string name="heading_one">Access Course Materials</string>
+    <string name="heading_two">Submit Assignments</string>
+    <string name="heading_three">Interact with Professors</string>
+    <string name="heading_fourth">Track your Progress </string>
+
+    //Description
+    <string name="desc_one">All your Class Materials at one place</string>
+    <string name="desc_two">Submit your Assignments from anywhere with ease</string>
+    <string name="desc_three">Ask and clarify your doubts Instantly</string>
+    <string name="desc_fourth">Keep up with your classmates by tracking your progress</string>
+
+</resources>
