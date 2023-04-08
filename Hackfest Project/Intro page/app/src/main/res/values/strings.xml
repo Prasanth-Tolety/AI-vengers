@@ -12,5 +12,14 @@
     <string name="desc_two">Submit your Assignments from anywhere with ease</string>
     <string name="desc_three">Ask and clarify your doubts Instantly</string>
     <string name="desc_fourth">Keep up with your classmates by tracking your progress</string>
+    <string name="title_activity_login">loginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>

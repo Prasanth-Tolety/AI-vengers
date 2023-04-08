@@ -33,34 +33,40 @@ public class studentLogin extends AppCompatActivity {
         MaterialButton loginbtn = (MaterialButton) findViewById(R.id.loginbtn1);
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
-            DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Students");
+//            DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Students");
 
 //            Query query = databaseReference.orderByChild("email").equalTo(username1.getText().toString());
 
             @Override
             public void onClick(View v) {
-                databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        // This method will be called once with the value from the Firebase object
-                        String userName = dataSnapshot.getValue(String.class);
-                        if (username1.getText().toString().equals("admin") && password1.getText().toString().equals("admin")) {
-                            Intent i = new Intent(studentLogin.this, studentHome.class);
-                            startActivity(i);
-                            Toast.makeText(studentLogin.this, "Login_Succesful", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(studentLogin.this, "Login_Failed", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError error) {
-                        // Failed to read value
-//                        Log.w(TAG, "Failed to read value.", error.toException());
-
-                    }
-                });
-
+//                databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(DataSnapshot dataSnapshot) {
+//                        // This method will be called once with the value from the Firebase object
+//                        String userName = dataSnapshot.getValue(String.class);
+//                        if (username1.getText().toString().equals("admin") && password1.getText().toString().equals("admin")) {
+//                            Intent i = new Intent(studentLogin.this, studentHome.class);
+//                            startActivity(i);
+//                            Toast.makeText(studentLogin.this, "Login_Succesful", Toast.LENGTH_SHORT).show();
+//                        } else {
+//                            Toast.makeText(studentLogin.this, "Login_Failed", Toast.LENGTH_SHORT).show();
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(DatabaseError error) {
+//                        // Failed to read value
+////                        Log.w(TAG, "Failed to read value.", error.toException());
+//
+//                    }
+//                });
+                if (username1.getText().toString().equals("admin") && password1.getText().toString().equals("admin")) {
+                Intent i = new Intent(studentLogin.this, studentHome.class);
+                startActivity(i);
+                Toast.makeText(studentLogin.this, "Login_Succesful", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(studentLogin.this, "Login_Failed", Toast.LENGTH_SHORT).show();
+            }
 
             }
         });

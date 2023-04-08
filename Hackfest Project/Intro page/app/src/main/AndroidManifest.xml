@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Onboarding">
         <activity
+            android:name=".studentProfile"
+            android:exported="false" />
+        <activity
             android:name=".profHome"
             android:exported="false" />
         <activity
@@ -18,9 +21,9 @@
             android:name=".profLogin"
             android:exported="false" />
         <activity android:name=".mainscreen" />
-        <activity android:name=".MainActivity"
-            android:exported="true"
-            >
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

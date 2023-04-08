@@ -18,4 +18,10 @@ public class studentHome extends AppCompatActivity {
         Intent i= new Intent(studentHome.this,mainscreen.class);
         startActivity(i);
     }
+    public void profile(View v){
+        Intent i= new Intent(studentHome.this,studentProfile.class);
+        startActivity(i);
+    }
+
+
 }
