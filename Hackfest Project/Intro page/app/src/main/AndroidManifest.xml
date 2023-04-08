@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Onboarding">
         <activity
+            android:name=".profHome"
+            android:exported="false" />
+        <activity
             android:name=".studentLogin"
             android:exported="false" />
         <activity
@@ -22,6 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".studentHome" />
 
         <meta-data
             android:name="preloaded_fonts"

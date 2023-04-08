@@ -12,13 +12,17 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class
+
+
+
+
+
+MainActivity extends AppCompatActivity {
 
     ViewPager mSLideViewPager;
     LinearLayout mDotLayout;
     Button backbtn, nextbtn, skipbtn;
-
-    Image ellipse1;
 
     TextView[] dots;
     ViewPagerAdapter viewPagerAdapter;
