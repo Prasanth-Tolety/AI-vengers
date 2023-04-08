@@ -18,7 +18,9 @@
             android:name=".profLogin"
             android:exported="false" />
         <activity android:name=".mainscreen" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

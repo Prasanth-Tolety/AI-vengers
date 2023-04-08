@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1085100711810",
+    "firebase_url": "https://studysphere-685ee-default-rtdb.firebaseio.com",
+    "project_id": "studysphere-685ee",
+    "storage_bucket": "studysphere-685ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085100711810:android:d84da283dd63b3f14eb99b",
+        "android_client_info": {
+          "package_name": "com.example.onboarding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085100711810-k5obif3tvb0h4md41upmafngunv3thol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwzYOKtR2A9-quyqcg_WS5SFBMf6fK8i8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085100711810-k5obif3tvb0h4md41upmafngunv3thol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
