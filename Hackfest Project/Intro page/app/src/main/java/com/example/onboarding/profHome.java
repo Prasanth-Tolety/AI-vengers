@@ -13,7 +13,15 @@ public class profHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prof_home);
     }
+    public void assignments(View v){
+        Intent i= new Intent(profHome.this,fireBaseActivity.class);
+        startActivity(i);
+    }
 
+    public void materials(View v){
+        Intent i= new Intent(profHome.this,materialsFireBase.class);
+        startActivity(i);
+    }
     public void logout(View v){
         Intent i= new Intent(profHome.this,mainscreen.class);
         startActivity(i);

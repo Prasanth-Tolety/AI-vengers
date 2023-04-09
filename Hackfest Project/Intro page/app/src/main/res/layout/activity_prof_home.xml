@@ -27,6 +27,7 @@
         android:rowCount="3">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/assignment"
             android:layout_margin="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,18 +41,15 @@
             app:cardUseCompatPadding="true">
 
             <LinearLayout
-                android:clickable="true"
-                android:onClick="profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
                 android:orientation="vertical">
-
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/baseline_person_outline_24"/>
+                    android:src="@drawable/baseline_library_books_24"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -82,10 +80,12 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
+                <ImageButton
+                    android:onClick="materials"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/baseline_library_books_24"/>
+                    android:src="@drawable/baseline_person_outline_24" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -116,10 +116,12 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
+                <ImageButton
+                    android:onClick="assignments"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/baseline_assignment_24"/>
+                    android:src="@drawable/baseline_person_outline_24" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

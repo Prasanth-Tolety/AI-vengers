@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/white"
+    tools:context=".fireBaseActivity">
+
+    <ImageView
+        android:layout_width="165dp"
+        android:layout_height="145dp"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class Materials"
+        android:textSize="45sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/txt_pdfName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter pdf file name"
+        android:textSize="22sp"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:id="@+id/btn_upload1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Upload"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/btn_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:onClick="btn_action"
+        android:text="view PDF Files"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>

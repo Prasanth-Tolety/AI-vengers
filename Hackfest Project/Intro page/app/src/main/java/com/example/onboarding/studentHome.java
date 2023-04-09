@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -25,6 +26,7 @@ public class studentHome extends AppCompatActivity {
         Intent j = getIntent();
         String email = j.getStringExtra("email");
         s=email;
+
 
         btnLogOut = findViewById(R.id.logout);
         mAuth = FirebaseAuth.getInstance();
@@ -57,6 +59,7 @@ public class studentHome extends AppCompatActivity {
     }
     public void courses(View v){
         Intent i= new Intent(studentHome.this,coursePage.class);
+        i.putExtra("email",s);
         startActivity(i);
     }
 
