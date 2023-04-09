@@ -36,7 +36,6 @@
         />
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="profClick"
         android:id="@+id/professor"
         android:layout_width="225dp"
         android:layout_height="wrap_content"
@@ -44,9 +43,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/white"
-        app:cornerRadius="10dp"
-        android:text="Professor"
+        android:onClick="profClick"
+        android:text="PROFESSOR"
         android:textColor="@color/purple_500"
-        android:textSize="30dp"
+        android:textSize="24sp"
+        app:cornerRadius="10dp"
         app:elevation="10dp" />
 </RelativeLayout>

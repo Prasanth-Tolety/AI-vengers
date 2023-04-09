@@ -40,6 +40,8 @@
             app:cardUseCompatPadding="true">
 
             <LinearLayout
+                android:clickable="true"
+                android:onClick="profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"

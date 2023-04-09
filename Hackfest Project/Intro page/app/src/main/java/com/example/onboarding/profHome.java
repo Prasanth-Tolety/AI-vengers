@@ -18,4 +18,8 @@ public class profHome extends AppCompatActivity {
         Intent i= new Intent(profHome.this,mainscreen.class);
         startActivity(i);
     }
+    public void profile(View v){
+        Intent i= new Intent(profHome.this,profProfile.class);
+        startActivity(i);
+    }
 }

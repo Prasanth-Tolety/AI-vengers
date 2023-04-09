@@ -76,14 +76,15 @@
             app:cardUseCompatPadding="true">
 
             <LinearLayout
-                android:id="@+id/logout"
+                android:id="@+id/courses"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
+                <ImageButton
+                    android:onClick="courses"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/baseline_library_books_24"/>
@@ -221,6 +222,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/logout"
                     android:onClick="logout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
