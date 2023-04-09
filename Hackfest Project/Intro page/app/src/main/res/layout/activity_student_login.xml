@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/tvRegHere"
         android:layout_below="@+id/btnLogin"
-        android:text="new user? register"
+        android:text="New user? Register"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"

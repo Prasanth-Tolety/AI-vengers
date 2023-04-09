@@ -62,6 +62,10 @@ public class studentHome extends AppCompatActivity {
         i.putExtra("email",s);
         startActivity(i);
     }
+    public void assignments(View v){
+        Intent i= new Intent(studentHome.this,fireBaseActivity.class);
+        startActivity(i);
+    }
 
 
 
